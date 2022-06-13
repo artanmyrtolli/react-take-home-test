@@ -1,13 +1,13 @@
 import React from "react";
-import '../../Styles/Result.css'
+import '../Styles/Result.css'
 
 const Result = ({ toggleModal, userBallot }) => {
-    
+
     const renderResults = Object.keys(userBallot).map(category => {
         return (
             <div key={category} className='modal__result-ballots'>
                 <h4>For {category.split('-').join(' ')}:</h4>
-                {userBallot[category] ? 
+                {userBallot[category] ?
                     <p>{userBallot[category].split('-').join(' ').toUpperCase()}</p> : <p>None</p>}
             </div>
         )

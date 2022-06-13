@@ -1,27 +1,27 @@
 import React, { useState } from 'react';
-import '../../Styles/BallotCategory.css'
-import Nominee from '../Nominee/Nominee';
+import '../Styles/BallotCategory.css'
+import Nominee from './Nominee';
 
 const BallotCategory = ({ ballot, tallySelections }) => {
     const [selection, setSelection] = useState('')
 
     const renderNominees = (nominees) => {
-      return nominees.map(nom => {
-        const highlight = nom.id === selection ? 'highlight' : ''
-        return <Nominee
-            key={nom.id}
-            id={nom.id} 
-            title={nom.title}
-            photo={nom.photoUrL}
-            highlight={highlight}
+        return nominees.map(nom => {
+            const highlight = nom.id === selection ? 'highlight' : ''
+            return <Nominee
+                key={nom.id}
+                id={nom.id}
+                title={nom.title}
+                photo={nom.photoUrL}
+                highlight={highlight}
             />
-      })
+        })
     }
 
     const toggleHighlight = (event) => {
         if (event.target.id) {
-        setSelection(event.target.id)
-        tallySelections(event.target.id, ballot.id)
+            setSelection(event.target.id)
+            tallySelections(event.target.id, ballot.id)
         }
     }
 
