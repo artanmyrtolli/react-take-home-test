@@ -1,9 +1,9 @@
-.ballot {
+.category {
     background-color: gray;
     color: white;
 }
 
-.ballot__header {
+.category__header {
     height: 5vh;
     display: flex;
     justify-content: center;

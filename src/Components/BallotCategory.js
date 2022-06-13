@@ -27,8 +27,8 @@ const BallotCategory = ({ ballot, tallySelections }) => {
 
     return (
         <>
-            <div className='ballot' >
-                <h2 className='ballot__header'>{ballot.title}</h2>
+            <div className='category' >
+                <h2 className='category__header'>{ballot.title}</h2>
             </div>
             <div className='nominees' onClick={event => toggleHighlight(event)}>
                 {renderNominees(ballot.items)}

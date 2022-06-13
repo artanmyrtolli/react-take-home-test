@@ -6,9 +6,10 @@ const Result = ({ toggleModal, userBallot }) => {
     const renderResults = Object.keys(userBallot).map(category => {
         return (
             <div key={category} className='modal__result-ballots'>
-                <h4>For {category.split('-').join(' ')}:</h4>
+                <h5 className="modal__result-cat">For {category.split('-').join(' ')}:</h5>
                 {userBallot[category] ?
-                    <p>{userBallot[category].split('-').join(' ').toUpperCase()}</p> : <p>None</p>}
+                    <p className="modal__result-selection">{userBallot[category].split('-').join(' ').toUpperCase()}</p> :
+                    <p className="modal__result-selection">None</p>}
             </div>
         )
     })

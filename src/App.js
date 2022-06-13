@@ -40,7 +40,7 @@ function App() {
       <div className="App">
         <Ballot ballot={ballot} tallySelections={tallySelections} />
       </div>
-      <button onClick={() => toggleModal()}>Submit All Ballots</button>
+      <button className='App__submit-button' onClick={() => toggleModal()}>Submit All Ballots</button>
       {modal && <Result toggleModal={toggleModal} userBallot={userBallot} />}
     </>
   )
