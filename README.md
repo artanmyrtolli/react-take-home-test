@@ -20,12 +20,20 @@ Artan Myrtolli
 
 ## User Functionality :
 
+  ![overview](https://user-images.githubusercontent.com/92772785/173283607-8c3a6438-ca1c-43cd-804b-4cfae1d1fddf.gif)
 
   - On page load, a list of categories and their respective nominations will be displayed
   - User may select any nominee card to submit for their own ballot by clicking the  `Nominate!` button
+  
+  ![selections](https://user-images.githubusercontent.com/92772785/173283644-e924a9a8-26e6-44a7-b221-7fef1bd1aea1.gif)
+  
   - User may only select one nominee per category
   - User may omit a category by making no selection. This will result their nomination to default to 'None'
   - User may scroll to see all possible categories
+
+  
+  ![submission](https://user-images.githubusercontent.com/92772785/173283712-f71bc821-fc7a-4ee3-a9c8-6ebf404a5203.gif)
+
   - When satisfied, user may click the `Submit All Ballots` button to finish
   - User will see a confirmation modal displaying all of their choices 
   - User may close the modal by clicking the `X` button on the top right of the modal
